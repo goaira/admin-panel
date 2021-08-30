@@ -13,6 +13,11 @@ export const sidebarData = [
         link: "/admin"
     },
     {
+        title: "Driver",
+        icon: <HomeIcon />,
+        link: "/driver"
+    },
+    {
         title: "User",
         icon: <HomeIcon />,
         link: "/user"

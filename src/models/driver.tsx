@@ -1,0 +1,58 @@
+export type DriverType = {
+    id: number,
+    mobile: number,
+    email: string,
+    aadhar: number,
+    name: string,
+    father_name: string,
+    dob: string,
+    gender: string,
+    marital_status: string,
+    blood_group: string,
+    qualification: string,
+    experience: string,
+    previous_work: string,
+    c_address: string,
+    c_pincode: number,
+    c_state: string,
+    c_country: string,
+    p_address: string,
+    p_pincode: number,
+    p_state: string,
+    p_country: string,
+    languages: string,
+    e_number: number,
+    e_name: string,
+    e_relation: string
+};
+
+
+export const driverModel: Array<DriverType> = [
+    {
+        id: 1,
+        mobile: 1234567890,
+        email: "test@test.com",
+        aadhar: 123412341234,
+        name: "Sathish",
+        father_name: "Bharathi",
+        dob: "08-06-1993",
+        gender: "Male",
+        marital_status: "Married",
+        blood_group: "AB+",
+        qualification: "10th",
+        experience: "10years",
+        previous_work: "Chennai",
+        c_address: "XXX",
+        c_pincode: 600001,
+        c_state: "Tamil Nadu",
+        c_country: "India",
+        p_address: "YYY",
+        p_pincode: 600001,
+        p_state: "Tamil Nadu",
+        p_country: "India",
+        languages: "English, Tamil, Hindi",
+        e_number: 9999999999,
+        e_name: "Deiva",
+        e_relation: "friend"
+    }
+]

@@ -9,7 +9,7 @@ const Admin = () => {
 
     const [createAdmin, setCreateAdmin] = useState(false);
     const [editAdmin, seteditAdmin] = useState(false);
-    const [editValue, seteditValue] = useState(0);
+    const [editId, seteditId] = useState(0);
     const [namez, setName] = useState("");
     const [usernamez, setUsername] = useState("");
     const [passwordz, setPassword] = useState("");
@@ -18,7 +18,7 @@ const Admin = () => {
         if (editAdmin) {
             adminModel.map((details, index) => {
                 const { id, name, username, password } = details;
-                if (editValue === id) {
+                if (editId === id) {
                     setName(name);
                     setUsername(username);
                     setPassword(password);
@@ -30,7 +30,7 @@ const Admin = () => {
             setUsername("");
             setPassword("");
         }
-    }, [editAdmin, editValue])
+    }, [editAdmin, editId])
 
     return (
         <div className="card">
@@ -62,7 +62,7 @@ const Admin = () => {
                                         <button className="viewbtn">View</button>
                                         <button className="editbtn" onClick={() => {
                                             seteditAdmin(true);
-                                            seteditValue(id);
+                                            seteditId(id);
                                         }}>Edit</button>
                                         <button className="deletebtn">Delete</button>
                                     </td>
@@ -78,7 +78,7 @@ const Admin = () => {
                         <span className="modal-close" onClick={() => {
                             setCreateAdmin(false);
                             seteditAdmin(false);
-                            seteditValue(0);
+                            seteditId(0);
                         }}>&times;</span>
                         Create Admin User
                     </div>
@@ -115,7 +115,7 @@ const Admin = () => {
                         <button className="closebtn" onClick={() => {
                             setCreateAdmin(false);
                             seteditAdmin(false);
-                            seteditValue(0);
+                            seteditId(0);
                         }}>Close</button>
                     </div>
                 </div>
