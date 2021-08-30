@@ -11,7 +11,7 @@ function App() {
       <Sidebar />
       <div className="mainContent">
         <Header />
-        <div style={{ padding: "15px" }}>
+        <div style={{ padding: "20px" }}>
           <Routes />
         </div>
       </div>
